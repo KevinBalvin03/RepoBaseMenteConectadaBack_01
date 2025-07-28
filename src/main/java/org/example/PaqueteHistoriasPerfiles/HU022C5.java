@@ -1,5 +1,4 @@
 package org.example.PaqueteHistoriasPerfiles;
-
 import java.util.Scanner;
 
 class Persona {
@@ -11,7 +10,6 @@ class Persona {
 public class HU022C5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String edit, campo;
         Byte num;
         int posicion, cantidad;
@@ -67,7 +65,7 @@ public class HU022C5 {
                 num = scanner.nextByte();
                 posicion = num - 1;
                 scanner.nextLine();
-                if (posicion > num && posicion != 0) {
+                if (posicion<=num && num>0 && posicion<cantidad) {
 
                     System.out.println("Ingrese el nombre del campo a editar o escriba TODO si desea editar todos los datos");
                     campo = scanner.nextLine();
@@ -75,6 +73,11 @@ public class HU022C5 {
                     if (campo.equalsIgnoreCase("nombre")) {
                         System.out.print("Ingrese el nuevo nombre: ");
                         personas[posicion].nombre = scanner.nextLine();
+                        if (personas[posicion].nombre.equalsIgnoreCase("")) {
+                            System.out.println("El nombre es un campo obligatorio no se puede dejar en blanco");
+                            personas[posicion].nombre = scanner.nextLine();
+
+                        }
                     } else if (campo.equalsIgnoreCase("direccion")) {
                         System.out.print("Ingresa la nueva direccion: ");
                         personas[posicion].direccion = scanner.nextLine();
@@ -87,6 +90,10 @@ public class HU022C5 {
                     } else if (campo.equalsIgnoreCase("todo")) {
                         System.out.print("Ingrese el nuevo nombre: ");
                         personas[posicion].nombre = scanner.nextLine();
+                        if (personas[posicion].nombre.equalsIgnoreCase("")) {
+                            System.out.println("El nombre es un campo obligatorio no se puede dejar en blanco");
+                            personas[posicion].nombre = scanner.nextLine();
+                        }
                         System.out.print("Ingresa la nueva direccion: ");
                         personas[posicion].direccion = scanner.nextLine();
                         System.out.print("Ingresa el nuevo telefono");

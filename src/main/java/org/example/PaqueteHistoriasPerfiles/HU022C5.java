@@ -29,10 +29,11 @@ public class HU022C5 {
 
                 System.out.print("Nombre: ");
                 personas[i].nombre = scanner.nextLine();
-                if (personas[i].nombre.equalsIgnoreCase("")) {
-                    System.out.println("El nombre es un campo obligatorio no se puede dejar en blanco");
-                    personas[i].nombre = scanner.nextLine();
 
+                while (personas[i].nombre.equals("")){
+                    System.out.println("No se puede dejar el espacio de nombre vacio");
+                    System.out.print("Ingrese el nombre: ");
+                    personas[i].nombre = scanner.nextLine();
                 }
 
 
@@ -47,21 +48,27 @@ public class HU022C5 {
             }
 
             System.out.println("\n=== Personas Registradas ===");
-            System.out.printf("%-20s %-15s %-25s %-25s\n", "Nombre", "Teléfono", "Dirección", "Correo");
-            System.out.println("-------------------------------------------------------------------------------------------");
+            System.out.printf("%-10s %-20s %-15s %-25s %-30s\n", "Código", "Nombre", "Teléfono", "Dirección", "Correo");
+            System.out.println("-----------------------------------------------------------------------------------------------");
 
             for (int i = 0; i < cantidad; i++) {
-                System.out.printf("%-20s %-15s %-25s %-25s\n",
+                System.out.printf("%-10d %-20s %-15s %-25s %-30s\n",
+                        (i + 1),
                         personas[i].nombre,
                         personas[i].telefono,
                         personas[i].direccion,
                         personas[i].correo);
             }
 
+
             System.out.println("Desea editar algun registro? responda si o no ");
             edit = scanner.nextLine();
             if (edit.equalsIgnoreCase("si")) {
-                System.out.println("Ingrese el numero del registro a editar: entre 1 y " + cantidad);
+                if (cantidad == 1){
+                    System.out.println("Ingrese el codigo del unico registro:");
+                } else if (cantidad>1) {
+                    System.out.print("Ingrese el numero del registro a editar: entre 1 y " + cantidad + ": ");
+                }
                 num = scanner.nextByte();
                 posicion = num - 1;
                 scanner.nextLine();
@@ -82,10 +89,10 @@ public class HU022C5 {
                         System.out.print("Ingresa la nueva direccion: ");
                         personas[posicion].direccion = scanner.nextLine();
                     } else if (campo.equalsIgnoreCase("telefono")) {
-                        System.out.print("Ingresa el nuevo telefono");
+                        System.out.print("Ingresa el nuevo telefono: ");
                         personas[posicion].telefono = scanner.nextLine();
                     } else if (campo.equalsIgnoreCase("Correo")) {
-                        System.out.print("Ingrese el nuevo correo");
+                        System.out.print("Ingrese el nuevo correo: ");
                         personas[posicion].correo = scanner.nextLine();
                     } else if (campo.equalsIgnoreCase("todo")) {
                         System.out.print("Ingrese el nuevo nombre: ");
@@ -96,20 +103,21 @@ public class HU022C5 {
                         }
                         System.out.print("Ingresa la nueva direccion: ");
                         personas[posicion].direccion = scanner.nextLine();
-                        System.out.print("Ingresa el nuevo telefono");
+                        System.out.print("Ingresa el nuevo telefono: ");
                         personas[posicion].telefono = scanner.nextLine();
-                        System.out.print("Ingrese el nuevo correo");
+                        System.out.print("Ingrese el nuevo correo: ");
                         personas[posicion].correo = scanner.nextLine();
                     } else {
                         System.out.println("Ingreso un valor erroneo");
                     }
                     System.out.println("\u001B[32m El cambio fue realizado \u001B[0m");
                     System.out.println("\n=== Personas Registradas ===");
-                    System.out.printf("%-20s %-15s %-25s %-25s\n", "Nombre", "Teléfono", "Dirección", "Correo");
-                    System.out.println("-------------------------------------------------------------------------------------------");
+                    System.out.printf("%-10s %-20s %-15s %-25s %-30s\n", "Código", "Nombre", "Teléfono", "Dirección", "Correo");
+                    System.out.println("-----------------------------------------------------------------------------------------------");
 
                     for (int i = 0; i < cantidad; i++) {
-                        System.out.printf("%-20s %-15s %-25s %-25s\n",
+                        System.out.printf("%-10d %-20s %-15s %-25s %-30s\n",
+                                (i + 1),
                                 personas[i].nombre,
                                 personas[i].telefono,
                                 personas[i].direccion,

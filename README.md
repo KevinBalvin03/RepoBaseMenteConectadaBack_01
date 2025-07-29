@@ -1,0 +1,157 @@
+# 🧠 Módulo de Gestión de Perfil y Portafolio  
+### 📁 Célula 5 · Equipo 2 - Proyecto *Base Mente Conectada*
+
+Este repositorio contiene la implementación del **Módulo de Gestión de Perfil y Portafolio**, como parte del desarrollo del sistema **Base Mente Conectada**. Fue elaborado por el **Equipo 2 de la Célula 5** con enfoque en prácticas de programación orientada a objetos usando **Java**.
+
+🔍 El objetivo principal de este módulo es brindar al usuario herramientas para **gestionar su perfil personal y profesional**, incluyendo información básica, proyectos, y control de datos.
+
+---
+
+## ✅ Historias de Usuario Desarrolladas
+
+A continuación se describen las 5 historias de usuario implementadas:
+
+---
+
+### 🧾 HU021C5 - Registro de Información Básica del Usuario
+
+🧩 **Objetivo:**  
+Permitir al usuario registrar información básica como nombre, especialidad y biografía.
+
+🔧 **Flujo funcional:**
+1. 🧑 Ingreso de nombre  
+2. 🎓 Ingreso de especialidad  
+3. 📝 Ingreso de biografía  
+4. 📋 Visualización del resumen del usuario
+
+📦 **Clases involucradas:**
+- `HU021C5`: Clase principal
+- `Persona1`: Contiene atributos y método para mostrar resumen
+
+---
+
+### 🧾 HU022C5 - Registro y Edición de Múltiples Perfiles
+
+🧩 **Objetivo:**  
+Registrar múltiples usuarios con sus datos personales y permitir edición posterior.
+
+🔧 **Flujo funcional:**
+1. 🧾 Ingreso del número de personas a registrar  
+2. 👤 Captura de: nombre, teléfono, dirección y correo  
+3. 📊 Visualización tipo tabla  
+4. 🛠️ Edición por campo o completa (opcional)
+
+🛡️ **Validaciones:**
+- El campo `nombre` no puede quedar vacío  
+- Solo se permiten ediciones dentro del rango válido
+
+📦 **Clases involucradas:**
+- `HU022C5`: Clase principal  
+- `Persona`: Clase que almacena los atributos de usuario
+
+---
+
+### 🧾 HU023C5 - Gestión de Proyectos del Usuario
+
+🧩 **Objetivo:**  
+Permitir al usuario agregar y visualizar proyectos personales o académicos.
+
+🔧 **Flujo funcional:**
+1. 📈 Visualización de la cantidad de proyectos registrados  
+2. ➕ Opción para agregar nuevo proyecto  
+3. 📋 Opción para visualizar los proyectos guardados  
+4. ❌ Salida del sistema
+
+🗂️ **Atributos del proyecto:**
+- Nombre  
+- Descripción  
+- Fecha (formato libre: día - mes - año)
+
+📦 **Clases involucradas:**
+- `HU023C5`: Clase de flujo
+- `Proyecto1`: Clase contenedora de atributos del proyecto
+
+---
+
+### 🧾 HU024C5 - Registro de Proyectos con Identificador
+
+🧩 **Objetivo:**  
+Registrar proyectos con identificador único y visualizarlos en formato organizado.
+
+🔧 **Flujo funcional:**
+1. 🆔 Ingreso de ID del proyecto  
+2. ➕ Registro de nombre, descripción y año  
+3. 📋 Visualización en lista con numeración
+
+🛡️ **Validaciones:**
+- Se impide mostrar lista si no hay proyectos agregados
+
+📦 **Clases involucradas:**
+- `HU024C5`: Clase principal
+- `Proyecto`: Clase que encapsula los atributos del proyecto
+
+---
+
+### 🧾 HU025C5 - Eliminación de Proyectos del Portafolio
+
+🧩 **Objetivo:**  
+Permitir al usuario eliminar proyectos existentes del portafolio con confirmación.
+
+🔧 **Flujo funcional:**
+1. 📋 Mostrar lista de proyectos  
+2. ❌ Solicitar número de proyecto a eliminar  
+3. ✅ Confirmar acción antes de borrado  
+4. 🔄 Mostrar lista actualizada
+
+🛡️ **Validaciones:**
+- Verificación de clave existente en `HashMap`
+- Confirmación del usuario antes de borrar
+- Mensaje si el portafolio queda vacío
+
+📦 **Clases involucradas:**
+- `HU025C5`: Controlador del proceso
+- `HashMap<Integer, String>` como estructura de almacenamiento
+
+---
+
+## 🛠️ Herramientas y Configuración
+
+| Requisito         | Versión o Herramienta         |
+|-------------------|-------------------------------|
+| ☕ **JDK**         | Java 17 o superior             |
+| 🧪 **IDE**         | IntelliJ IDEA / Eclipse        |
+| 📦 **Gestión**     | Java puro (sin frameworks externos) |
+| 💾 **Almacenamiento** | Uso de colecciones (`ArrayList`, `HashMap`) en memoria |
+
+---
+
+## 👥 Autores
+
+Este módulo fue desarrollado por el **Equipo 2 de la Célula 5** como parte del proyecto académico **Base Mente Conectada**.
+
+👤 **Kevin Stiward Balvin García**  
+📚 Participante en el desarrollo de todas las historias de usuario del módulo  
+💻 Lenguaje: Java
+
+👤 **Maria Alejandra Carmona Serna**  
+📚 Participante en el desarrollo de todas las historias de usuario del módulo  
+💻 Lenguaje: Java
+
+👤 **Sebastian Garzon Villada**  
+📚 Participante en el desarrollo de todas las historias de usuario del módulo  
+💻 Lenguaje: Java
+
+👤 **Maria Fernanda Montezuma Gonzalez**  
+📚 Participante en el desarrollo de todas las historias de usuario del módulo  
+💻 Lenguaje: Java
+
+👤 **Tatiana Poddubnyak**  
+📚 Participante en el desarrollo de todas las historias de usuario del módulo  
+💻 Lenguaje: Java
+---
+
+📌 *Todos los códigos han sido probados en consola con entrada interactiva.*
+
+
+
+

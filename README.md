@@ -189,7 +189,24 @@ Permitir al usuario filtrar sus proyectos por año para facilitar la gestión y 
 📦 Clases involucradas:
 
 HU032C5
+🧾 HU033C5 - Verificación de Proyectos Duplicados
 
+🧩 Objetivo:
+Facilitar al usuario la verificación de proyectos duplicados, para evitar redundancias, mantener la base de datos limpia y mejorar la organización y eficiencia en la gestión de proyectos.
+
+🔧 Flujo funcional:
+
+📂 Solicita el nombre del archivo
+
+💾 Guarda la información en el objeto
+
+📋 Muestra el resultado al imprimir
+
+📦 Clases involucradas:
+
+HU033 (principal)
+
+ProyectoHU33C5
 Proyectos
 
 🧾 HU034C5 - Identificación de Proyectos Duplicados

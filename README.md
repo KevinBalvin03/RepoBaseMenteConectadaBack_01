@@ -112,7 +112,8 @@ Permitir al usuario eliminar proyectos existentes del portafolio con confirmaci�
 - `HU025C5`: Controlador del proceso
 - `HashMap<Integer, String>` como estructura de almacenamiento
 
-  🧾 HU027C5 - Almacenamiento de Múltiples Perfiles
+
+   🧾 HU027C5 - Almacenamiento de Múltiples Perfiles
 
 🧩 Objetivo:
 Implementar un mecanismo que permita almacenar múltiples perfiles en un arreglo, facilitando la organización de la información.
@@ -137,6 +138,7 @@ HU027C5
 
 Registros
 
+
 🧾 HU029C5 - Exportación de Datos del Usuario
 
 🧩 Objetivo:
@@ -156,6 +158,7 @@ HU029C5
 
 Proyecto29C5
 
+
 🧾 HU030C5 - Conteo de Proyectos
 
 🧩 Objetivo:
@@ -173,6 +176,7 @@ Determinar y mostrar la cantidad total de proyectos registrados.
 
 Incluida dentro de HU032C5
 
+
 🧾 HU032C5 - Filtrado de Proyectos por Año
 
 🧩 Objetivo:
@@ -189,6 +193,7 @@ Permitir al usuario filtrar sus proyectos por año para facilitar la gestión y 
 📦 Clases involucradas:
 
 HU032C5
+
 🧾 HU033C5 - Verificación de Proyectos Duplicados
 
 🧩 Objetivo:
@@ -208,6 +213,7 @@ HU033 (principal)
 
 ProyectoHU33C5
 Proyectos
+
 
 🧾 HU034C5 - Identificación de Proyectos Duplicados
 

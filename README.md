@@ -112,6 +112,132 @@ Permitir al usuario eliminar proyectos existentes del portafolio con confirmaci�
 - `HU025C5`: Controlador del proceso
 - `HashMap<Integer, String>` como estructura de almacenamiento
 
+
+   🧾 HU027C5 - Almacenamiento de Múltiples Perfiles
+
+🧩 Objetivo:
+Implementar un mecanismo que permita almacenar múltiples perfiles en un arreglo, facilitando la organización de la información.
+
+🔧 Flujo funcional:
+
+📋 Usa una lista de objetos
+
+➕ Permite agregar múltiples registros
+
+📊 Muestra todos al final
+
+🛡️ Validaciones:
+
+Campos obligatorios: nombre, apellido, correo, activo
+
+Fecha con LocalDate
+
+📦 Clases involucradas:
+
+HU027C5
+
+Registros
+
+
+🧾 HU029C5 - Exportación de Datos del Usuario
+
+🧩 Objetivo:
+Desarrollar una funcionalidad que permita exportar y mostrar los datos del usuario en formato estructurado a través de la consola.
+
+🔧 Flujo funcional:
+
+🗂️ Muestra datos en formato CSV
+
+🖥️ Imprime como texto plano en consola
+
+🏷️ Incluye encabezados para mayor claridad
+
+📦 Clases involucradas:
+
+HU029C5
+
+Proyecto29C5
+
+
+🧾 HU030C5 - Conteo de Proyectos
+
+🧩 Objetivo:
+Determinar y mostrar la cantidad total de proyectos registrados.
+
+🔧 Flujo funcional:
+
+🔢 Cuenta elementos en la lista
+
+📊 Imprime el total
+
+📭 Muestra mensaje si está vacío
+
+📦 Clases involucradas:
+
+Incluida dentro de HU032C5
+
+
+🧾 HU032C5 - Filtrado de Proyectos por Año
+
+🧩 Objetivo:
+Permitir al usuario filtrar sus proyectos por año para facilitar la gestión y análisis del historial.
+
+🔧 Flujo funcional:
+
+📅 Solicita un año
+
+🔍 Filtra los proyectos que coincidan
+
+📋 Muestra solo los filtrados
+
+📦 Clases involucradas:
+
+HU032C5
+
+🧾 HU033C5 - Verificación de Proyectos Duplicados
+
+🧩 Objetivo:
+Facilitar al usuario la verificación de proyectos duplicados, para evitar redundancias, mantener la base de datos limpia y mejorar la organización y eficiencia en la gestión de proyectos.
+
+🔧 Flujo funcional:
+
+📂 Solicita el nombre del archivo
+
+💾 Guarda la información en el objeto
+
+📋 Muestra el resultado al imprimir
+
+📦 Clases involucradas:
+
+HU033 (principal)
+
+ProyectoHU33C5
+Proyectos
+
+
+🧾 HU034C5 - Identificación de Proyectos Duplicados
+
+🧩 Objetivo:
+Permitir al usuario identificar proyectos repetidos en su lista para eliminar duplicados.
+
+🔧 Flujo funcional:
+
+🔎 Compara nombres en la lista
+
+⚠️ Marca duplicados
+
+📋 Muestra advertencia al usuario
+
+🛡️ Validaciones:
+
+Solo se aceptan respuestas sí o no
+
+Muestra los proyectos duplicados
+
+📦 Clases involucradas:
+
+Incluida dentro de HU032C5
+
 ---
 
 ## 🛠️ Herramientas y Configuración
